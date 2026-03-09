@@ -5,9 +5,7 @@ from models.var_model import train_var
 
 df = load_ais('data/raw/ais.csv')
 df = clean_ais(df)
-
 routes = detect_routes(df)
 signal = freight_momentum(routes)
 model = train_var(signal)
-
-print("Pipeline complete")
+print('Pipeline complete')
